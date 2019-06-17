@@ -1,0 +1,27 @@
+---
+# Local customisation (S)CSS
+---
+
+/* Variables */
+$kiselbla: #44687D;
+
+
+/* Custom (S)CSS */
+.hero {
+  &.has-background {
+    position: relative;
+    overflow: hidden;
+  }
+
+  &-background {
+    position: absolute;
+    object-fit: cover;
+    object-position: center center;
+    width: 100%;
+    height: 100%;
+
+    &.is-transparent {
+        opacity: 0.3;
+    }
+  }
+}
