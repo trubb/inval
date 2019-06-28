@@ -16,11 +16,14 @@ $button9: #abc;
 
 /* Custom (S)CSS */
 .hero {
+
+  // .hero.has-background
   &.has-background {
     position: relative;
     overflow: hidden;
   }
 
+  // .hero-background
   &-background {
     position: absolute;
     object-fit: cover;
@@ -28,8 +31,15 @@ $button9: #abc;
     width: 100%;
     height: 100%;
 
+    // .hero.is-transparent
     &.is-transparent {
-        opacity: 0.3;
+        opacity: 0.5<;
     }
   }
 }
+
+/*
+.button9 {
+  color: $button9;
+}
+*/
