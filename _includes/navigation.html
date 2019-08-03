@@ -1,10 +1,10 @@
 <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
-    <a class="navbar-item" href="/index.html">
+    <a class="navbar-item" href="{{ "/index.html" | relative_url }}">
       <img src="{{ "/assets/img/logo_in_600px.png" | relative_url }}" >
     </a>
 
-    <!-- Creates the burger -->
+    <!-- Creates the burger if pagewidth is small enough -->
     <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample" onclick="document.querySelector('.navbar-menu').classList.toggle('is-active');">
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
@@ -15,11 +15,11 @@
   <!-- Navbar items -->
   <div class="navbar-menu">
     <div class="navbar-start">
-      <a class="navbar-item" href="/index.html">
+      <a class="navbar-item" href="{{ "/index.html" | relative_url }}">
         Home
       </a>
 
-      <a class="navbar-item" href="/election/">
+      <a class="navbar-item" href="{{ "/election/index.html" | relative_url }}">
         Information about the elections
       </a>
 
@@ -30,46 +30,46 @@
         </a>
 
         <div class="navbar-dropdown">
-          <a class="navbar-item" href="/committees/board/">
+          <a class="navbar-item" href="{{ "/committees/board/index.html" | relative_url }}">
             Chapter board
           </a>
 
-          <a class="navbar-item" href="/committees/central/">
+          <a class="navbar-item" href="{{ "/committees/central/index.html" | relative_url }}">
             Central chapter functions
           </a>
 
-          <a class="navbar-item"  href="/committees/brink/">
+          <a class="navbar-item"  href="{{ "/committees/brink/index.html" | relative_url }}">
             BRINK
           </a>
 
-          <a class="navbar-item"  href="/committees/communication/">
+          <a class="navbar-item"  href="{{ "/committees/communication/index.html" | relative_url }}">
             Communication
           </a>
 
-          <a class="navbar-item"  href="/committees/education/">
+          <a class="navbar-item"  href="{{ "/committees/education/index.html" | relative_url }}">
             Education
           </a>
 
-          <a class="navbar-item" href="/committees/itk/">
+          <a class="navbar-item" href="{{ "/committees/itk/index.html" | relative_url }}">
             ITK
           </a>
 
-          <a class="navbar-item"  href="/committees/reception/">
+          <a class="navbar-item"  href="{{ "/committees/reception/index.html" | relative_url }}">
             Reception Committee
           </a>
 
-          <a class="navbar-item" href="/committees/smn/">
+          <a class="navbar-item" href="{{ "/committees/smn/index.html" | relative_url }}">
             SMN
           </a>
 
-          <a class="navbar-item" href="/committees/sports/">
+          <a class="navbar-item" href="{{ "/committees/sports/index.html" | relative_url }}">
             Sports Committee
           </a>
 
         </div>
       </div>
 
-      <a class="navbar-item" href="/assets/pdf/statutes_20170523_en.pdf" target="_blank">
+      <a class="navbar-item" href="{{ "/assets/pdf/statutes_20170523_en.pdf" | relative_url }}" target="_blank">
         The Chapter's statutes
       </a>
 
